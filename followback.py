@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-from twbot import api
 import tweepy
+from .twbot import api
+
 
 
 for follower in tweepy.Cursor(api.followers).items():
