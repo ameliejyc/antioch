@@ -4,6 +4,11 @@ import tweepy
 import time
 
 def reply():
+<<<<<<< Updated upstream
+=======
+    '''Reply feature that tweets a custom message to every person that mentions the bot.
+    It checks every 60 seconds for mentions  or 300s if the server gets overwhelmed'''
+>>>>>>> Stashed changes
     for tweet in tweepy.Cursor(api.mentions_timeline).items():
         try:
             #print('tweet from @' + tweet.user.screen_name + ':' + tweet.text)
